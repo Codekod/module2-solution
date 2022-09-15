@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Two Column Design</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+#k1 {
+    background-color: blueviolet;
+}
+#k2 {
+    background-color: rgb(58, 245, 98);
+}
+#k3 {
+    background-color: rgb(179, 38, 38);
+}
+.column {
+  float: left;
+  width: 31%;
+  border: 2px solid black;
+  margin: 15px;
+  
+  
+}
+
+/* Clear floats after the columns */
+.row {
+
+  clear: both;
+}
+.baslik1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: palevioletred;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    display: inline;
+    float: right;
+    }
+    .baslik2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: red;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    display: inline;
+    float: right;
+    }
+    .baslik3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: rgb(217, 243, 166);
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    display: inline;
+    float: right;
+    }
+p {
+    clear: both;
+    padding: 10px;
+}
+#k1, #k2, #k3 {
+    width: 98%; 
+    margin: 10px auto;       
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #k1, #k2 {
+    width: 46%;    
+    margin: 2%;         
+  }
+  #k3 {
+    width: 96%;        
+    margin: 2%;     
+  }
+}
+@media only screen and (min-width: 991px) {
+  #k1, #k2, #k3 {
+    width: 29%;   
+    margin: 2.16%;     
+  }
+}
+</style>
+</head>
+<body>
+<h1>Three Column Design</h1>
+
+<div class="row">
+    <div id="k1" class="column">
+        <div class="baslik1">Chicken</div>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.r sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima</p></div>
+    <div id="k2" class="column">
+        <div class="baslik2">Beef</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.r sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima</p></div>
+    <div id="k3" class="column">
+        <div class="baslik3">Sushi</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.r sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima</p></div>
+  </div>
+</body>
+</html>
